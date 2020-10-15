@@ -3,11 +3,13 @@ module github.com/mattermost/mattermost-server/v5
 go 1.14
 
 require (
+	github.com/Masterminds/semver/v3 v3.1.0
 	github.com/Masterminds/squirrel v1.4.0
 	github.com/NYTimes/gziphandler v1.1.1
 	github.com/RoaringBitmap/roaring v0.5.0 // indirect
 	github.com/armon/go-metrics v0.3.4 // indirect
 	github.com/avct/uasurfer v0.0.0-20191028135549-26b5daa857f1
+	github.com/aws/aws-sdk-go v1.31.4
 	github.com/beevik/etree v1.1.0 // indirect
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/blevesearch/bleve v1.0.9
@@ -60,7 +62,7 @@ require (
 	github.com/mattermost/gorp v1.6.2-0.20200624165429-2595d5e54111
 	github.com/mattermost/gosaml2 v0.3.2
 	github.com/mattermost/ldap v0.0.0-20191128190019-9f62ba4b8d4d
-	github.com/mattermost/logr v1.0.9
+	github.com/mattermost/logr v1.0.13
 	github.com/mattermost/rsc v0.0.0-20160330161541-bbaefb05eaa0
 	github.com/mattermost/viper v1.0.4
 	github.com/mattn/go-colorable v0.1.7 // indirect
@@ -80,6 +82,7 @@ require (
 	github.com/pelletier/go-toml v1.8.0 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.7.1
+	github.com/reflog/dateconstraints v0.2.1
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.12.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20190728182440-6a916e37a237 // indirect
@@ -133,3 +136,5 @@ require (
 	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 	willnorris.com/go/imageproxy v0.10.0
 )
+
+replace github.com/NYTimes/gziphandler v1.1.1 => github.com/agnivade/gziphandler v1.1.2-0.20200815170021-7481835cb745
